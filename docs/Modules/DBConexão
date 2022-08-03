@@ -1,0 +1,34 @@
+const Sequelize = require("sequelize");
+const sequelize = new Sequelize('biblioteca', 'root', '', {
+    host: 'localhost',
+    dialect: 'mysql'
+})
+
+const Livros = sequelize.define('livros', {
+    'nome do livro': {
+        type: Sequelize.STRING
+    },
+    'nome do autor': {
+        type: Sequelize.STRING
+    },
+    'editora': {
+        type: Sequelize.STRING
+    },
+    'data de devolucao': {
+        type: Sequelize.DATE
+    },
+    'situacao atual': {
+        type: Sequelize.ENUM('Pendente', 'Devolvido')
+    },
+    'aluno possuinte': {
+        type: Sequelize.STRING
+    }
+})
+
+const SQModules = {
+    Sequelize: Sequelize,
+    sequelize: sequelize,
+    Livros: Livros
+}
+
+module.exports = SQModules;
