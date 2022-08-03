@@ -2,11 +2,11 @@
 Sistema de registros de uma biblioteca virtual.
 
 ## Apresentação
-feito utilizando PHP, MySQL data bases e data tables. Inclui ferramenta de pesquisa, paginação dinamica e funcionalidades de edição de registros.
+feito utilizando HTML, CSS, MySQL, JS Front-end e JS Back-end usando a ferramenta node.js
 
 ## Tecnologias
-* PHP
-* CSS simples com efeitos e animações de introdução
+* HTML
+* CSS
 * JS
 * MySQL
-* Data Tables
+* Node.js
