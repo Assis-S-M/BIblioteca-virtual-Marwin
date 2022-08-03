@@ -9,4 +9,4 @@ feito utilizando HTML, CSS, MySQL, JS Front-end e JS Back-end usando a ferrament
 * CSS
 * JS
 * MySQL
-* Node.js
+* Node.js (Express, Handlebars, BodyParser, Sequelize)
