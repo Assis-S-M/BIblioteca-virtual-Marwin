@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+header {
+    color: #fff;
+    background-color: lightgreen;
+    position: absolute;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    font-size: 25px;
+    text-decoration: none;
+    color: green;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 20px;
+    transition: 1s;
+    right: 2%;
+}
+
+ul {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+li {
+    margin: 10px;
+    color: lightgreen;
+    display: block;
+}
+
+.disabled {
+    display: none;
+    transition: 1s;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: 1000;
+    transition: 0.2s;
+    text-align: center;
+}
+
+div#menuWindow {
+    margin-top: 10px;
+    display: flex;
+}
+
+p#menuText {
+    color: rgb(40, 137, 2);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.invert {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+table {
+    background-color: #d0f1d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    padding: 5px;
+    text-align: center;
+    border: 3px outset green;
+}
+
+th {
+    padding: 7px;
+}
+
+td {
+    padding: 7px;
+}
+
+form {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    margin-left: 40%;
+    background-color: #d0f1d2;
+    border: 3px outset green;
+}
+
+form#acoes {
+    position: absolute;
+    margin: 0;
+    padding: 5px;
+    top: 65%;
+    right: 35%;
+}
+
+form#opcoes {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    margin-left: 43%;
+    flex-direction: column;
+    background-color: #d0f1d2;
+    border: 3px outset green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form#addLivro {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    margin-left: 40%;
+    background-color: #d0f1d2;
+    border: 3px outset green;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#divIcon {
+    position: absolute;
+    top: -30%;
+    right: 2%;
+    height: 80px;
+    cursor: pointer;
+}
+
+#divBar {
+    height: 10px;
+    font-size: 50px;
+    font-weight: 800;
+}
