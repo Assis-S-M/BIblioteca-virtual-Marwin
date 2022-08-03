@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <th>id</th><th>nome do livro</th><th>nome do autor</th><th>editora</th><th>data de devolução</th><th>situação atual</th><th>aluno possuinte</th>
+        {{#each livros}}
+            <tr>
+                <td>{{dataValues.[id]}}</td>
+                <td>{{dataValues.[nome do livro]}}</td>
+                <td>{{dataValues.[nome do autor]}}</td>
+                <td>{{dataValues.[editora]}}</td><td>{{dataValues.[data de devolucao]}}</td>
+                <td>{{dataValues.[situacao atual]}}</td>
+                <td>{{dataValues.[aluno possuinte]}}</td>
+            </tr>
+        {{/each}}
+    </thead>
+</table>
+
+<form id="acoes" method="post" action="/modificarLivro">
+    <button type="submit" value="data" name="acao">Mudar data de devolução</button>
+    <button type="submit" value="situacao" name="acao">Mudar situação atual</button>
+    <button type="submit" value="alunoPos" name="acao">Mudar aluno possuinte</button>
+    <button type="submit" value="deletar" name="acao">Deletar registro de livro</button>
+</form>

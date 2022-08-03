@@ -1,0 +1,13 @@
+<form method="post" action="/add" id="addLivro">
+            <label>Nome do livro: <br><input type="text" name="nomeLivro"></label><br>
+            <label>Nome do autor: <br><input type="text" name="nomeAutor"></label><br>
+            <label>Editora: <br><input type="text" name="editora"></label><br>
+            <label>Data de devolução <br><input type="date" name="dataDevolução" id="addLivro"></label><br>
+            <label>Situação atual <br>
+                <select id="addLivro" name="situação">
+                    <option value="pendente">Pendente</option>
+                    <option value="devolvido">Devolvido</option>
+                </select></label><br>
+            <label>Aluno possuinte <br> <input type="text" name="alunoPos"></label><br>
+            <input type="submit" value="adicionar livro">
+    </form>
