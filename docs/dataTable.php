@@ -8,29 +8,23 @@
     $opcoesPesquisa = isset($_GET['opcoesPesquisa']) ? $_GET['opcoesPesquisa']: "contem";
     $VerRegistros = isset($_GET['VerTotalRegistros']) ? $_GET['VerTotalRegistros']: "não";
 
-    if ($VerRegistros == "não" && $opcoesPesquisa == "pesquisaPrecisa") {
+    if ($VerRegistros == "não" && $pesquisa == "") {
 
-        $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '$pesquisa' AND id BETWEEN '$regisrosMostrados' AND '$pagina'";
-    } else if ($VerRegistros == "não" && $opcoesPesquisa == "comecaCom") {
+        $query = "SELECT * FROM `livros` WHERE id BETWEEN '$regisrosMostrados' AND '$pagina'";
+    } else if ($VerRegistros == "sim" && $pesquisa == "") {
 
-        $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '$pesquisa%' AND id BETWEEN '$regisrosMostrados' AND '$pagina'";
-    } else if ($VerRegistros == "não" && $opcoesPesquisa == "terminaCom") {
-
-        $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '%$pesquisa' AND id BETWEEN '$regisrosMostrados' AND '$pagina'";
-    } else if ($VerRegistros == "não" && $opcoesPesquisa == "contem") {
-
-        $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '%$pesquisa%' AND id BETWEEN '$regisrosMostrados' AND '$pagina'";
-    } else if ($VerRegistros == "sim" && $opcoesPesquisa =="pesquisaPrecisa") {
-
+        $query = "SELECT * FROM `livros`";
+    } else if ($pesquisa != "" && $opcoesPesquisa == "pesquisaPrecisa") {
+        
         $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '$pesquisa'";
-    } else if ($VerRegistros == "sim" && $opcoesPesquisa =="comecaCom") {
-
+    } else if ($pesquisa != "" && $opcoesPesquisa == "comecaCom") {
+        
         $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '$pesquisa%'";
-    } else if ($VerRegistros == "sim" && $opcoesPesquisa =="terminaCom") {
-
+    } else if ($pesquisa != "" && $opcoesPesquisa == "terminaCom") {
+        
         $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '%$pesquisa'";
-    } else if ($VerRegistros == "sim" && $opcoesPesquisa =="contem") {
-
+    } else if ($pesquisa != "" && $opcoesPesquisa == "contem") {
+        
         $query = "SELECT * FROM `livros` WHERE `$filtro` LIKE '%$pesquisa%'";
     }
 

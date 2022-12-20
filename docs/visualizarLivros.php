@@ -44,7 +44,7 @@
                     <option value="nome do livro" selected>Nome do livro</option>
                     <option value="nome do autor">Nome do autor</option>
                     <option value="editora">Editora</option>
-                    <option value="data de devolução">Data de devolução</option>
+                    <option value="data de devolucao">Data de devolução</option>
                     <option value="pendencia">Pendência</option>
                     <option value="aluno possuinte">Aluno</option>
                 </select>
